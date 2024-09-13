@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #fff;
+  --secondary: #151875;
+  --bgc: #fff;
+}
+.dark {
+  --primary: #151875;
+  --secondary: #fff;
+  --bgcolor: #000;
+}
+
+.slick-track {
+  display: flex;
+}
+.hero_wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.slick-next {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background-color: transparent;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  background-repeat: no-repeat;
+  background-image: url(../img/angle-right-solid.svg);
+  background-position: center;
+  background-size: cover;
+  z-index: 10000;
+}
+
+.slick-prev {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background-color: transparent;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  background-repeat: no-repeat;
+  background-image: url(../img/angle-left-solid.svg);
+  background-position: center;
+  background-size: cover;
+  z-index: 10000;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 15px;
+  bottom: 0;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: thistle;
+  display: block;
+  transform: rotate(45deg);
+}
+
+.slick-dots .slick-active button {
+  background-color: springgreen;
+}
